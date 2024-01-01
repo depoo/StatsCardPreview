@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .stats-paragraph{
+    @apply text-Slightly-transparent-paragraph text-[.9375rem] font-Inter font-normal sm:leading-7 sm:pr-20 sm:font-light
+  }
+  .box-stadistic{
+    @apply py-3 flex flex-col items-center sm:items-start
+  }
+  .stadistic{
+    @apply text-White-headind-stats text-xl font-semibold font-Inter sm:text-[23px] sm:pb-1
+  }
+
+  .head_stadistic{
+    @apply text-Slightly-transparent-headings text-[10px] font-Lexend font-normal tracking-wider sm:text-xs sm:font-light
+  }
+}
